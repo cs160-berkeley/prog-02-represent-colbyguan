@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="110dp" >
+    <View
+        android:id="@+id/tray"
+        android:layout_width="220dp"
+        android:layout_height="2dp"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_marginTop="48dp"
+        android:background="#0372FC"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/pelosi"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF" />
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/party"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_democrat"
+        android:layout_toRightOf="@id/profile"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"/>
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/email"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_email"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@id/party"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@id/email"
+        android:layout_alignLeft="@id/email"
+        android:background="@android:color/transparent"
+        android:id="@+id/linkEmail"/>
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/website"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_website"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@id/email"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@id/website"
+        android:layout_alignLeft="@id/website"
+        android:background="@android:color/transparent"
+        android:id="@+id/linkWebsite"/>
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/twitter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_twitter"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@id/website"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@id/twitter"
+        android:layout_alignLeft="@id/twitter"
+        android:background="@android:color/transparent"
+        android:id="@+id/linkTwitter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rep. Nancy Pelosi"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:textColor="#232B38"
+        android:layout_marginTop="-24dp"
+        android:layout_below="@+id/profile"
+        android:layout_toEndOf="@+id/profile" />
+
+
+</RelativeLayout>

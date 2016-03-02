@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="164dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rep_background"
+    android:layout_centerHorizontal="true">
+
+    <include layout="@layout/rep_header"
+        android:id="@+id/header"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="-8dp"
+        android:background="#232B38"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="\@NancyPelosi"
+        android:textColor="#00ACEE"
+        android:id="@+id/twitterHandle"
+        android:layout_below="@+id/separator"
+        android:layout_alignStart="@+id/header"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="                           Gung Hay Fat Choi! Honoring the Year of the Monkey!"
+        android:id="@+id/textView"
+        android:layout_below="@+id/separator"
+        android:layout_alignStart="@+id/header"
+        android:layout_marginLeft="8dp"
+        android:layout_alignEnd="@+id/header"
+        android:layout_marginTop="4dp" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/voteBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pelosi" />
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rep_background"
+        android:alpha="0.95"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/county"
+            android:textColor="#4F4F4F"
+            android:textStyle="bold"
+            android:text="Kern County"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtext"
+            android:textColor="#4F4F4F"
+            android:text="California - 2012 Vote"
+            android:layout_below="@id/county"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/subtext"
+            android:layout_alignParentRight="true"
+            android:background="#F0002F"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="60dp"/>
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/subtext"
+            android:background="#0372FC"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/voteAmount"/>
+
+        <ImageView
+            android:id="@+id/democratIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_democrat"
+            android:layout_below="@id/subtext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/republicanIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_republican"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/democratIcon"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/democratInfo"
+            android:textColor="#4F4F4F"
+            android:text="Obama\n40.28%"
+            android:layout_below="@id/democratIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/republicanInfo"
+            android:textColor="#4F4F4F"
+            android:text="Romney\n56.99%"
+            android:layout_below="@id/republicanIcon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:textAlignment="textEnd"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
