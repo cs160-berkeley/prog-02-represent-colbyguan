@@ -47,10 +47,10 @@ public class RepGridPagerAdapter extends FragmentGridPagerAdapter {
         }
 
 
-        counties = new ArrayList(Arrays.asList("Kern County", "Orange County", "Santa Clara County"));
-        states = new ArrayList(Arrays.asList("California", "California", "California"));
-        d_percents = new ArrayList(Arrays.asList(25.0, 50.0, 75.0));
-        r_percents = new ArrayList(Arrays.asList(75.0, 50.0, 25.0));
+        counties = new ArrayList(Arrays.asList("Kern County", "Orange County", "Santa Clara County", "The Bronx", "Queens", "Dutchess County"));
+        states = new ArrayList(Arrays.asList("California", "California", "California", "New York", "New York", "New York"));
+        d_percents = new ArrayList(Arrays.asList(25.0, 50.0, 75.0, 91.2, 78.8, 52.5));
+        r_percents = new ArrayList(Arrays.asList(75.0, 50.0, 25.0, 8.3, 20.3, 45.8));
     }
 
     @Override
@@ -68,7 +68,12 @@ public class RepGridPagerAdapter extends FragmentGridPagerAdapter {
         if (col == 0 && row < repTitles.size()) {
             return RepFragment.newInstance(repTitles.get(row), repNames.get(row), repParties.get(row), row);
         } else if (col == 1 && row < repTitles.size()) {
-            return VoteFragment.newInstance(counties.get(row), states.get(row), d_percents.get(row), r_percents.get(row));
+            if (repNames.get(0).charAt(repNames.get(0).length() - 1) == 'i') {
+                return VoteFragment.newInstance(counties.get(row), states.get(row), d_percents.get(row), r_percents.get(row));
+            } else {
+                row = row + 3;
+                return VoteFragment.newInstance(counties.get(row), states.get(row), d_percents.get(row), r_percents.get(row));
+            }
         }
         return null;
     }
