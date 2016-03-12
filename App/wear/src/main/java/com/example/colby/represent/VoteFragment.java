@@ -44,11 +44,26 @@ public class VoteFragment extends Fragment {
         View d_line = v.findViewById(R.id.voteAmount);
         TextView democratInfo = (TextView) v.findViewById(R.id.democratInfo);
         TextView republicanInfo = (TextView) v.findViewById(R.id.republicanInfo);
+
         countyView.setText(county);
         stateView.setText(state + " - 2012 Vote");
-        d_line.getLayoutParams().width = (int) d_percent;
+
+
+        Log.d("VoteFragment", "setting d_line " + d_line.getLayoutParams().width);
         democratInfo.setText("Obama\n" + fmt.format(d_percent) + "%");
         republicanInfo.setText("Romney\n" + fmt.format(r_percent) + "%");
+
+        ViewGroup.LayoutParams lp = d_line.getLayoutParams();
+        final float scale = getResources().getDisplayMetrics().density;
+        lp.width = (int) (d_percent * scale + 0.5f);
+        d_line.setLayoutParams(lp);
+
+        if (d_percent == 0 && r_percent == 0) {
+            stateView.setText(state + " - 2012 Vote\nUnable to get vote data");
+            lp.width = (int) (50 * scale + 0.5f);
+            d_line.setLayoutParams(lp);
+        }
+
 
         return v;
     }

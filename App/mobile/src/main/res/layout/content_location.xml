@@ -20,7 +20,7 @@
         android:text="Represent!"
         android:textSize="36dp"
         android:textColor="#FFFFFF"
-        android:id="@+id/title"
+        android:id="@+id/locationTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -29,11 +29,11 @@
         android:id="@+id/img2"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/pelosi"
+        android:src="@drawable/initial_profile"
         app:civ_border_width="2dp"
         app:civ_border_color="#FFFFFF"
         android:layout_marginTop="29dp"
-        android:layout_below="@+id/title"
+        android:layout_below="@+id/locationTitle"
         android:layout_centerHorizontal="true" />
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -41,7 +41,7 @@
         android:id="@+id/img1"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/pelosi"
+        android:src="@drawable/initial_profile"
         app:civ_border_width="2dp"
         app:civ_border_color="#FFFFFF"
         android:layout_alignTop="@+id/img2"
@@ -53,7 +53,7 @@
         android:id="@+id/img3"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/pelosi"
+        android:src="@drawable/initial_profile"
         app:civ_border_width="2dp"
         app:civ_border_color="#FFFFFF"
         android:layout_alignTop="@+id/img2"

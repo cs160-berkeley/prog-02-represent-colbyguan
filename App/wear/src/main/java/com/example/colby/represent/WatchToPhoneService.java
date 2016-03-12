@@ -60,6 +60,7 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
                     sendMessage("/random", "");
                 } else {
                     int idx = extras.getInt("INDEX");
+                    Log.d("WatchToPhone", "/rep got idx " + idx);
                     sendMessage("/rep/" + Integer.toString(idx), "");
                 }
             }

@@ -1,2 +1,2 @@
-include ':mobile', ':wear', ':common'
+include ':mobile', ':wear'
 include ':libs:CircleImageView'

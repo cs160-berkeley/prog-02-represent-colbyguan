@@ -31,12 +31,13 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Minority Leader - no committees"
         android:textStyle="bold"
-        android:id="@+id/name"
+        android:id="@+id/cmts"
         android:textColor="#BDBDBD"
         android:layout_below="@id/header"
         android:layout_toRightOf="@id/timeline"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="-12dp" />
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="-8dp"
+        android:layout_alignEnd="@+id/header" />
 
     <ImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -44,9 +45,9 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:src="@drawable/ic_blank"
-        android:layout_below="@id/header"
+        android:layout_below="@id/cmts"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,7 +60,7 @@
         android:layout_alignTop="@id/endMarker"
         android:layout_toRightOf="@id/endMarker"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="5dp"/>
 
     <ImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -83,7 +84,7 @@
         android:layout_alignTop="@id/check1"
         android:layout_toRightOf="@id/check1"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="0dp"/>
 
     <ImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -107,7 +108,7 @@
         android:layout_alignTop="@id/check2"
         android:layout_toRightOf="@id/check2"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="0dp"/>
 
     <ImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -131,7 +132,7 @@
         android:layout_alignTop="@id/check3"
         android:layout_toRightOf="@id/check3"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="0dp"/>
 
 
 </RelativeLayout>
